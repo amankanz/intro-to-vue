@@ -15,7 +15,7 @@ const app = Vue.createApp({
       inventory: 9,
 
       // Lesson 4 coding challenge
-      onSale: 9
+      onSale: true
     }
 
   } 
