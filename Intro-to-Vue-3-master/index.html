@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar"></div>
+
+      <div class="product-display">
+        <div class="product-container">
+          <div class="product-image">
+            <!-- Image goes here -->
+            <img :src="image" :alt="alt_descript">
+          </div>
+    
+          <div class="product-info">
+            <h1>{{ product }}</h1>
+
+            <!-- Lesson 3 challenge - Solution -->
+            <a :href="url" :target="newTab">Made by Vue Class 3 Mastery</a>
+
+            <p>{{ description }}</p>
+
+            <p v-if="inventory > 10">In Stock</p>
+            <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
+            <p v-else>Out of Stock</p>
+
+            <!-- Coding CHallenge -->
+            <p v-if="onSale > 0">On Sale!</p>
+
+
+          </div><!-- END OF PRODUCT INFO -->
+
+        </div><!-- END OF PRODUCT CONTAINER -->
+
+      </div>
+
+      
+      
+    </div><!-- END OF App-->
+    
+
+
+
+
+
+
+
+    <!-- Import Js -->
+    <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app');
+    </script>
+  </body>
+</html>
