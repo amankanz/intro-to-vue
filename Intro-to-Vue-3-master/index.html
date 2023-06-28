@@ -34,6 +34,19 @@
             <!-- Coding CHallenge -->
             <p v-if="onSale">On Sale!</p>
 
+            <!--Lesson 5 List Rendering-->
+            <ul>
+              <li v-for="detail in details">{{ detail }}</li>
+            </ul>
+            
+            <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
+
+            <!--Code challenge-->
+            <!--solution-->
+            <ul>
+              <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
+            </ul>
+
 
           </div><!-- END OF PRODUCT INFO -->
 

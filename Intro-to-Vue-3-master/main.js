@@ -15,7 +15,21 @@ const app = Vue.createApp({
       inventory: 9,
 
       // Lesson 4 coding challenge
-      onSale: true
+      onSale: true,
+
+      // Lesson 5 List Rending
+      details: ['50% Conton', '30% Wool', '90% Polyester'],
+
+      variants: [
+        {id: 2234, color: 'green'},
+        {id: 2235, color: 'blue'}
+      ],
+
+      //code challenge
+      //solution
+      sizes: ['M', 'X', 'L', 'XL'],
+
+      
     }
 
   } 
